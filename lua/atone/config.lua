@@ -52,14 +52,24 @@ M.opts = {
             goto_mark = { "'", "`" },
             mark_picker = "s",
             help = { "?", "g?" },
+            zoom_diff = "<leader>uz",
+            set_sticky_ref = "=",
         },
         auto_diff = {
             quit = { "<C-c>", "q" },
             help = { "?", "g?" },
+            undo = "u",
+            redo = "<C-r>",
+            zoom_diff = "<leader>uz",
         },
         help = {
             quit_help = { "<C-c>", "q" },
         },
+    },
+    zoom = {
+        --- Width and height as a fraction of the editor (0–1)
+        width = 0.8,
+        height = 0.8,
     },
     ui = {
         -- refer to `:h 'winborder'`
